@@ -28,7 +28,7 @@ public class Main {
         } else if (sign.equals("/")) {
             result = Calculator.divide(value1, value2);
         } else {
-            System.out.println("�븣�닔�뾾�뒗 �뿰�궛�옄�엯�땲�떎 �� ");
+            System.out.println("error! ");
         }
 
         System.out.println("result = " + result);
