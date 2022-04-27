@@ -1,21 +1,53 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Scanner;
+
+
 class CalculatorTest {
-    CalculatorTest() {
+
+    @Test
+    @DisplayName("더하기_테스트")
+    public void add() {
+        //given
+        double a = 10;
+        double b = 30;
+
+        //then
+        Assertions.assertEquals(40,Calculator.add(a,b));
     }
 
     @Test
-    @DisplayName("�뜑�븯湲�_�뀒�뒪�듃")
-    public void add() {
-        double a = 10.0D;
-        double b = 30.0D;
-        Assertions.assertEquals(40.0D, Calculator.add(a, b));
+    @DisplayName("빼기_테스트")
+    public void subtract() {
+        //given
+        double a = 30;
+        double b = 10;
+
+        //then
+        Assertions.assertEquals(20,Calculator.subtract(a,b));
+    }
+
+    @Test
+    @DisplayName("곱하기_테스트")
+    public void multiply() {
+        //given
+        double a = 10;
+        double b = 30;
+
+        //then
+        Assertions.assertEquals(300,Calculator.multiply(a,b));
+    }
+
+    @Test
+    @DisplayName("나누기_테스트")
+    public void divide() {
+        //given
+        double a = 30;
+        double b = 10;
+
+        //then
+        Assertions.assertEquals(3,Calculator.divide(a,b));
     }
 }
