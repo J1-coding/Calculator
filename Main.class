@@ -1,0 +1,36 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+import java.util.Scanner;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        System.out.println("[怨꾩궛湲� �봽濡쒓렇�옩 留뚮뱾湲� �떎�떆]");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("泥ル쾲吏� 媛� : ");
+        double value1 = (double)scan.nextInt();
+        System.out.print("�몢踰덉㎏ 媛� : ");
+        double value2 = (double)scan.nextInt();
+        System.out.print("�궗移숈뿰�궛遺��샇 (+,-,*,/) : ");
+        String sign = scan.next();
+        double result = 0.0D;
+        if (sign.equals("+")) {
+            result = Calculator.add(value1, value2);
+        } else if (sign.equals("-")) {
+            result = Calculator.subtract(value1, value2);
+        } else if (sign.equals("*")) {
+            result = Calculator.multiply(value1, value2);
+        } else if (sign.equals("/")) {
+            result = Calculator.divide(value1, value2);
+        } else {
+            System.out.println("�븣�닔�뾾�뒗 �뿰�궛�옄�엯�땲�떎 �� ");
+        }
+
+        System.out.println("result = " + result);
+    }
+}
