@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<eclipse-userlibraries>
-  <library name="jsoup">
-    <archive path="/Users/jaewonkim/.m2/repository/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar" />
-  </library>
-</eclipse-userlibraries>
-
