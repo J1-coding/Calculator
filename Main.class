@@ -1,36 +1,47 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 import java.util.Scanner;
 
 public class Main {
-    public Main() {
-    }
 
     public static void main(String[] args) {
-        System.out.println("[怨꾩궛湲� �봽濡쒓렇�옩 留뚮뱾湲� �떎�떆]");
+
+        System.out.println("[계산기 프로그램 만들기 실시]");
+
+        //첫번째와 두번째 정수 값을 담을 변수 선언
+        double value1;
+        double value2;
+        
+        //사용자로부터 키보드 입력을 받기 위한 scanner 객체 선언 실시
         Scanner scan = new Scanner(System.in);
-        System.out.print("泥ル쾲吏� 媛� : ");
-        double value1 = (double)scan.nextInt();
-        System.out.print("�몢踰덉㎏ 媛� : ");
-        double value2 = (double)scan.nextInt();
-        System.out.print("�궗移숈뿰�궛遺��샇 (+,-,*,/) : ");
+
+        //사용자로부터 정수값과 연산자 부호값을 입력받습니다
+        System.out.print("첫번째 값 : ");
+        value1 = scan.nextInt();
+
+        System.out.print("두번째 값 : ");
+        value2 = scan.nextInt();
+
+        System.out.print("사칙연산부호 (+,-,*,/) : ");
         String sign = scan.next();
-        double result = 0.0D;
-        if (sign.equals("+")) {
-            result = Calculator.add(value1, value2);
-        } else if (sign.equals("-")) {
-            result = Calculator.subtract(value1, value2);
-        } else if (sign.equals("*")) {
-            result = Calculator.multiply(value1, value2);
-        } else if (sign.equals("/")) {
-            result = Calculator.divide(value1, value2);
-        } else {
-            System.out.println("error! ");
+
+        double result = 0;
+
+        if(sign.equals("+")) {
+            result = Calculator.add(value1,value2);
+        }
+        else if(sign.equals("-")) {
+            result= Calculator.subtract(value1,value2);
+        }
+        else if(sign.equals("*")) {
+            result =Calculator.multiply(value1,value2);
+        }
+        else if(sign.equals("/")) {
+            result = Calculator.divide(value1,value2);
+        }
+        else {
+            System.out.println("알수없는 연산자입니다 … ");
         }
 
         System.out.println("result = " + result);
+
     }
 }
