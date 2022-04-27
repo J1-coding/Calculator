@@ -1,0 +1,21 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+    CalculatorTest() {
+    }
+
+    @Test
+    @DisplayName("�뜑�븯湲�_�뀒�뒪�듃")
+    public void add() {
+        double a = 10.0D;
+        double b = 30.0D;
+        Assertions.assertEquals(40.0D, Calculator.add(a, b));
+    }
+}
